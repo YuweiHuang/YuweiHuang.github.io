@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="Yuwei&#39;s Homepage">
 <meta property="og:description" content="简介我之前是一起教育科技集团 (17zuoye.com）的自然语言处理算法工程师。于2018年，我在北京化工大学(BUCT)计算机系获得工学学士学位。当前的研究兴趣包括机器学习，数据挖掘和自然语言处理。我特别是对于 领域自适应、文本挖掘、自动评分、机器翻译、用户画像、多视图学习、深度学习加速与模型压缩和多源异构数据挖掘等领域有浓厚的兴趣。截止目前，已和许多同事或者合作伙伴将机器学习算法运用于文本">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2021-07-30T11:59:41.720Z">
+<meta property="og:updated_time" content="2021-08-24T12:23:06.401Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Yuwei Huang 黄俞卫">
 <meta name="twitter:description" content="简介我之前是一起教育科技集团 (17zuoye.com）的自然语言处理算法工程师。于2018年，我在北京化工大学(BUCT)计算机系获得工学学士学位。当前的研究兴趣包括机器学习，数据挖掘和自然语言处理。我特别是对于 领域自适应、文本挖掘、自动评分、机器翻译、用户画像、多视图学习、深度学习加速与模型压缩和多源异构数据挖掘等领域有浓厚的兴趣。截止目前，已和许多同事或者合作伙伴将机器学习算法运用于文本">
@@ -299,15 +299,8 @@
 <h4 id="专业经历"><a href="#专业经历" class="headerlink" title="专业经历"></a>专业经历</h4><p><strong>软件工程师.</strong> 上海某创业公司 <strong style="float:right">2020年7月至今</strong></p>
 <p>负责将AI算法技术运用于智能故障诊断。</p>
 <p><strong>NLP算法工程师.</strong> NLP组, 人工智能部, <a href="https://www.17zuoye.com/" target="_blank" rel="noopener">17zuoye</a> <strong style="float:right">2018年4月至2020年7月（实习3个月）</strong></p>
-<p>英语口语音素级评分：负责提升音素打分准确率，包括48音素分类训练和单音素正误分类训练。<br>内容：1）基于pytorch实现tdnn, dnn, cnn等，复现kaldi训练的准确率。2）通过领域自适应解决训练测试类别分布不同的问题。3）协同训练：基于 LR和SVM的co-training，互相标注无标签数据扩增训练集。<br>成果：准确率提升40%。（pytorch, domain adaptation, co-training）</p>
-<p>英语作文语法自动改错：基于NMT研发语法纠错系统，替换基于传统序列标注的老系统。<br>内容：1）数据：利用反向翻译，语法树direct-noise，spell checker candidates三种方法增广。针对反向翻译实现三种sampling方法。2）模型：在transformer中引入copy attention；引入多任务学习；人工加噪。<br>成果：F0.5提升0.2（fairseq, transformer, copy attention, 多任务学习，序列标注）</p>
-<p>口算拍照批改模型加速：基于TensorRT加速公式图像识别模型和检测模型。<br>内容：1）重写推理：用TensorRT重写FCN，context GRU cell，coverage attention。2）显存复用：将decoder改为循环单步复用，显存减少求数倍。3）算子融合：如CBR, conv+bn等4）int8量化。<br>成果：图像识别模型吞吐量提升8倍，整体口算吞吐量提升5倍多。（图像识别，模型量化，算子融合）</p>
-<p>英语作文自动批改：提升好词好句评分排序效果，实现作文自动评分。<br>内容：好词挖掘：提取词频，词难度特征；好句挖掘：利用好词所有特征，并通过正则表达式提取模式特征，语法树分析提取句法结构特征，连贯性特征。自动评分：提取词，句，语法，结构特征，融合CNN文本向量，通过SVM进行文本分类，类别为分数。<br>成果：从0到1实现自动评分系统，好词top3命中率提升20%。(特征工程，排序，CNN，文本分类)</p>
 <p><strong>研究助理.</strong> 人工智能实验室, <a href="http://aic-fe.bnu.edu.cn/en/" target="_blank" rel="noopener">未来教育高精尖创新中心</a>, 北师大 <strong style="float:right">2017年3月至2018年2月</strong></p>
-<p>语文主观题短答案自动评阅系统的技术研究与实现： 1）训练word2vector+LSTM做文本分类。对word2vector在学生答案小语料fine-tuning。2）深度自动编码器降维词袋模型特征，类别正则化学习分数信息，期望正则化学习分数类别，解决不平衡问题。通过DAE隐层和类别正则化分别训练分类器。<br>成果：研究成果被PAKDD2018和AIED2018接收。（word2vector，LSTM，DAE，文本分类）</p>
-<p>“AI好老师”学生心理问题智能问答系统：参与智能问答系统研发。<br>内容：1）基于Neo4j构建领域知识图谱；2）文本匹配：基于文本embedding计算余弦相似度进行相似问题匹配。（知识图谱，Neo4j，文本相似度）</p>
 <p><strong>实习生.</strong> <a href="http://mldm.ict.ac.cn" target="_blank" rel="noopener">机器学习与数据挖掘组</a>, 中科院计算技术研究所 <strong style="float:right">2016年8月至2017年1月</strong></p>
-<p>阿里天池优惠券使用预测大数据竞赛：基于商家和用户数据给用户推荐商家优惠券。<br>内容：1）特征工程：提取用户和商家统计特征，用户与商家线上线下的交互特征。用随机森林特征重要性来进行特征选择。2）模型集成：第一层集成随机森林, gbdt, adaboost，第二层用LR做stacking。<br>成果：排名145/1505。（特征交叉，独热化，归一化，缺失值补充）</p>
 <p><strong>客座学生.</strong> <a href="http://mldm.ict.ac.cn" target="_blank" rel="noopener">机器学习与数据挖掘组</a>, 中科院计算技术研究所 <strong style="float:right">2015年10月至2016年6月</strong></p>
 <p>公务机票推荐系统：开发基于java爬虫的公务机票推荐系统。(<a href="https://fuzhenzhuang.github.io/" target="_blank" rel="noopener">导师:庄福振教授</a>)</p>
 <hr>
